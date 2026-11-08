@@ -1,0 +1,42 @@
+<!--
+Template: Page
+Description: Wellora's standard WordPress page template.
+-->
+
+<!-- HEADER -->
+
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- MAIN CONTENT -->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+<main class="wp-block-group">
+
+    <!-- PAGE HEADER -->
+
+    <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"72px","bottom":"40px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"900px"}} -->
+    <div class="wp-block-group alignwide" style="padding-top:72px;padding-right:24px;padding-bottom:40px;padding-left:24px">
+
+        <!-- wp:post-title {"level":1,"style":{"typography":{"fontFamily":"var:preset|font-family|editorial-serif","fontSize":"56px","fontWeight":"600","lineHeight":"1.2"}}} /-->
+
+    </div>
+    <!-- /wp:group -->
+
+    <!-- PAGE CONTENT -->
+
+    <!-- wp:group {"style":{"spacing":{"padding":{"left":"24px","right":"24px","bottom":"100px"}}},"layout":{"type":"constrained","contentSize":"760px"}} -->
+    <div class="wp-block-group" style="padding-right:24px;padding-bottom:100px;padding-left:24px">
+
+        <!-- wp:post-featured-image {"aspectRatio":"16/9","style":{"border":{"radius":"8px"},"spacing":{"margin":{"bottom":"40px"}}}} /-->
+
+        <!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+
+    </div>
+    <!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- FOOTER -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
