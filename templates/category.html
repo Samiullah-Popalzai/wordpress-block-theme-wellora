@@ -1,0 +1,82 @@
+<!--
+Template: Category
+Description: Wellora's category archive template.
+-->
+
+<!-- HEADER -->
+
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- MAIN CONTENT -->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+<main class="wp-block-group">
+
+    <!-- CATEGORY INTRODUCTION -->
+
+    <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"72px","bottom":"40px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"900px"}} -->
+    <div class="wp-block-group alignwide" style="padding-top:72px;padding-right:24px;padding-bottom:40px;padding-left:24px">
+
+        <!-- wp:paragraph {"textColor":"primary","style":{"typography":{"fontSize":"14px","fontWeight":"600","letterSpacing":"2px","textTransform":"uppercase"}}} -->
+        <p class="has-primary-color has-text-color" style="font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase">Explore by Category</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:query-title {"type":"archive","showPrefix":false,"style":{"typography":{"fontFamily":"var:preset|font-family|editorial-serif","fontSize":"48px","fontWeight":"600","lineHeight":"1.2"}}} /-->
+
+        <!-- wp:paragraph {"textColor":"muted","style":{"typography":{"fontSize":"18px","lineHeight":"1.7"}}} -->
+        <p class="has-muted-color has-text-color" style="font-size:18px;line-height:1.7">Discover articles and practical ideas from this topic.</p>
+        <!-- /wp:paragraph -->
+
+    </div>
+    <!-- /wp:group -->
+
+    <!-- CATEGORY POSTS -->
+
+    <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"24px","right":"24px","bottom":"80px"}}},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group alignwide" style="padding-right:24px;padding-bottom:80px;padding-left:24px">
+
+        <!-- wp:query {"queryId":3,"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":true},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-query">
+
+            <!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+
+                <!-- wp:group {"style":{"spacing":{"blockGap":"12px","padding":{"bottom":"32px"}}},"layout":{"type":"constrained"}} -->
+                <div class="wp-block-group" style="padding-bottom:32px">
+
+                    <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3"} /-->
+
+                    <!-- wp:post-title {"level":3,"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|editorial-serif","fontSize":"24px","fontWeight":"600","lineHeight":"1.3"}}} /-->
+
+                    <!-- wp:post-date {"style":{"typography":{"fontSize":"13px"}}} /-->
+
+                    <!-- wp:post-excerpt {"excerptLength":24,"moreText":"Read article"} /-->
+
+                </div>
+                <!-- /wp:group -->
+
+            <!-- /wp:post-template -->
+
+            <!-- wp:query-no-results -->
+                <!-- wp:paragraph -->
+                <p>No articles have been published in this category yet.</p>
+                <!-- /wp:paragraph -->
+            <!-- /wp:query-no-results -->
+
+            <!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"center"}} -->
+                <!-- wp:query-pagination-previous /-->
+                <!-- wp:query-pagination-numbers /-->
+                <!-- wp:query-pagination-next /-->
+            <!-- /wp:query-pagination -->
+
+        </div>
+        <!-- /wp:query -->
+
+    </div>
+    <!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- FOOTER -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
